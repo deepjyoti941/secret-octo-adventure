@@ -1,11 +1,11 @@
 require.config({
 
     baseUrl: "js/scripts",
-    
+
 	// alias libraries paths
     paths: {
         'angular': '../lib/angular/angular',
-        'angular-route': '../lib/angular/angular-route',
+        'angular-route': '../lib/angular-route/angular-route',
         'async': '../lib/requirejs/async',
         'angularAMD': '../lib/angularAMD/angularAMD',
         'ngload': '../lib/angularAMD/ngload',
