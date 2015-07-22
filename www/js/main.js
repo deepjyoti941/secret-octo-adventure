@@ -6,10 +6,10 @@ require.config({
     paths: {
         'angular': '../lib/angular/angular',
         'angular-route': '../lib/angular-route/angular-route',
-        'async': '../lib/requirejs/async',
+        'async': '../lib/requirejs-plugins/src/async',
         'angularAMD': '../lib/angularAMD/angularAMD',
         'ngload': '../lib/angularAMD/ngload',
-        'ui-bootstrap': '../lib/angular-ui-bootstrap/ui-bootstrap-tpls',
+        'ui-bootstrap': '../lib/angular-ui-bootstrap-bower/ui-bootstrap-tpls',
         'prettify': '../lib/google-code-prettify/prettify',
 
         'HomeController': 'controller/home_ctrl',

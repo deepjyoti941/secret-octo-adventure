@@ -4,8 +4,8 @@ define(['angularAMD', 'angular-route'], function (angularAMD) {
     /**
      * Configure Angular ngApp with route and cache the needed providers
      */
-  app.config(function ($routeProvider) {
-    $routeProvider
+     app.config(function ($routeProvider) {
+      $routeProvider
       .when("/home", angularAMD.route({
         templateUrl: 'views/home.html', controller: 'HomeController', navTab: "home"
       }))
@@ -18,8 +18,11 @@ define(['angularAMD', 'angular-route'], function (angularAMD) {
       .when("/map", angularAMD.route({
         templateUrl: 'views/map.html', controller: 'MapController', navTab: "map"
       }))
+      .when("/chart", angularAMD.route({
+        templateUrl: 'views/chart.html', controller: 'HomeController', navTab: "chart"
+      }))
       .otherwise({redirectTo: '/home'});
-  });
+    });
 
   // Define constant to be used by Google Analytics
   app.constant("SiteName", "/angularAMD");
